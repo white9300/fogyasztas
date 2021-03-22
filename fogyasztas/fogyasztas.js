@@ -9,3 +9,5 @@ let tankolas
 do {
   tankolas = prompt("Hány litert tankoltál?", 0);
 } while (tankolas >= 50 || tankolas <= 1);
+
+let autok = {evjarat:"2007", marka:"Suzuki"};
