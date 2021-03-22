@@ -15,9 +15,8 @@ do {
 let autok = {
     evjarat:"2007",
     marka:"Suzuki",
-    utca:"Szabadság",
-    garazs:     function(){
-        
+    garazs:     function(utca){
+        return this.marka + " garázsa" + utca + " utcában található"
     },
     fogyaszt:   function(tan,km){
         let fogy = (tan/km)*100
@@ -35,4 +34,13 @@ if(km > 700){
 }
 else{
     console.log("Csak így tovább!")
+}
+
+console.log(autok.garazs(" Szabadság "))
+
+let keys = Object.keys(autok)
+
+let i;
+for (i = 0; i < keys.length; i++) {
+    console.log(keys[i])
 }
