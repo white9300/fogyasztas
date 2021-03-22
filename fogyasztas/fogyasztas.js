@@ -16,6 +16,9 @@ let autok = {
     evjarat:"2007",
     marka:"Suzuki",
     utca:"Szabadság",
+    garazs:     function(){
+        
+    },
     fogyaszt:   function(tan,km){
         let fogy = (tan/km)*100
         return this.evjarat + " évjáratú " + this.marka + " fogyasztása " + fogy
@@ -23,3 +26,13 @@ let autok = {
    
 }
 console.log(autok.fogyaszt(tankolas,km))
+
+if(tankolas > 20){
+    console.log("Nem sajnálod az üzemanyagot!")
+}
+if(km > 700){
+    console.log("Nem kellene ennyit utaznod!")
+}
+else{
+    console.log("Csak így tovább!")
+}
